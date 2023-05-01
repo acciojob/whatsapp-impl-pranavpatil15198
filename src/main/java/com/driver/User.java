@@ -1,10 +1,12 @@
 package com.driver;
 
-import java.util.HashSet;
-
 public class User {
     private String name;
-    static HashSet<String>set;
+    private String mobile;
+
+    public User(){
+
+    }
     public User(String name, String mobile) {
         this.name = name;
         this.mobile = mobile;
@@ -25,6 +27,4 @@ public class User {
     public void setMobile(String mobile) {
         this.mobile = mobile;
     }
-
-    private String mobile;
 }
