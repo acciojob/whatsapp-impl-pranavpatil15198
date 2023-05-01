@@ -5,8 +5,15 @@ import java.util.Date;
 public class Message {
     private int id;
     private String content;
+    private Date timestamp;
 
-    public Message() {
+    public Message(){
+
+    }
+    public Message(int id, String content, Date timestamp) {
+        this.id = id;
+        this.content = content;
+        this.timestamp = timestamp;
     }
 
     public int getId() {
@@ -32,21 +39,4 @@ public class Message {
     public void setTimestamp(Date timestamp) {
         this.timestamp = timestamp;
     }
-
-    public Message(int id, String content, Date timestamp) {
-        this.id = id;
-        this.content = content;
-        this.timestamp = timestamp;
-    }
-    public Message(int id) {
-        this.id = id;
-        this.timestamp = new Date();
-    }
-    public Message(int id, String content) {
-        this.id = id;
-        this.content = content;
-        this.timestamp = new Date();
-    }
-    private Date timestamp;
-
 }
