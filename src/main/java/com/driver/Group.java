@@ -4,20 +4,8 @@ public class Group {
     private String name;
     private int numberOfParticipants;
 
-    public Group(){
-
-    }
-
-    public Group(String name,int numberOfParticipants){
+    public Group(String name, int numberOfParticipants) {
         this.name = name;
-        this.numberOfParticipants = numberOfParticipants;
-    }
-
-    public int getNumberOfParticipants() {
-        return numberOfParticipants;
-    }
-
-    public void setNumberOfParticipants(int numberOfParticipants) {
         this.numberOfParticipants = numberOfParticipants;
     }
 
@@ -29,24 +17,11 @@ public class Group {
         this.name = name;
     }
 
-    @Override
-    public boolean equals(Object that)
-    {
-
-        if(this == that)
-            return true;
-
-
-        if(that == null || that.getClass()!= this.getClass())
-            return false;
-
-
-        Group obj = (Group) that;
-
-
-        return (obj.name.equals(this.name)  && obj.numberOfParticipants == this.numberOfParticipants);
+    public int getNumberOfParticipants() {
+        return numberOfParticipants;
     }
 
-
-
+    public void setNumberOfParticipants(int numberOfParticipants) {
+        this.numberOfParticipants = numberOfParticipants;
+    }
 }
